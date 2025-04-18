@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "deploy" : "gh-pages -d build",
+    "dist" : "rm -R build/* && cp -R dist/* build/"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
