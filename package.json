@@ -2,7 +2,7 @@
   "name": "todotime",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://oryam.github.io/timekeeper-chronicle",
+  "homepage": "/timekeeper-chronicle",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,8 +12,7 @@
     "preview": "vite preview",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
-    "dist" : "rm -rf build/* && cp -R dist/* build/",
-    "docs" : "rm -rf docs/* && cp -R dist/* docs/"
+    "dist" : "rm -rf docs/* && cp -R dist/* docs/"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
