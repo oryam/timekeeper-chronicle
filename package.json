@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
-    "dist" : "rm -rf docs/* && cp -R dist/* docs/"
+    "clean-gh-pages" : "rm -rf dist/*",
+    "build-gh-pages" : "vite build --base=/timekeeper-chronicle/",
+    "dist-gh-pages" : "rm -rf docs/* && cp -R dist/* docs/"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
