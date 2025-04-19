@@ -2,7 +2,6 @@
   "name": "todotime",
   "private": true,
   "version": "0.0.0",
-  "homepage": "/timekeeper-chronicle",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,11 +9,8 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
-    "clean-gh-pages" : "rm -rf dist/*",
-    "build-gh-pages" : "vite build --base=/timekeeper-chronicle/",
-    "dist-gh-pages" : "rm -rf docs/* && cp -R dist/* docs/"
+    "predeploy": "vite build --base=/timekeeper-chronicle/",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
